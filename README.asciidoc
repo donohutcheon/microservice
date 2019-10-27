@@ -1,0 +1,7 @@
+=== MySQL
+
+docker run --name microservice-mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD="password" -d mysql:8.0.17
+
+docker run -it --rm mysql mysql -hdonovanh -uroot -p
+
+docker run --name microservice-app -p 8080:8080 -d donohutcheon/microservice:1.0
